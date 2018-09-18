@@ -1,0 +1,25 @@
+.error-overlay{
+    background: radial-gradient(black 70%, transparent);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.error-content{
+    margin: 7vh auto;
+    min-height: 70vh;
+    width: 80%;
+}
+.error-content img{
+    height: 50vh;
+}
+.error-content h2{
+    color: var(--font-color);
+    font-family: PermanentMarker;
+    font-size: 30px;
+    text-align: center;
+}
+.error-content button{
+    margin: 7vh auto;
+}

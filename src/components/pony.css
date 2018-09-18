@@ -1,0 +1,10 @@
+.pony{
+    position: absolute;
+    transition: all 0.1s linear;
+    width: 25px;
+    height: 25px;
+}
+.pony img{
+    object-fit: contain;
+    width: 23px;
+}

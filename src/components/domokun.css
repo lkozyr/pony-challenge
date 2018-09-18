@@ -1,0 +1,19 @@
+.domokun{
+    animation: domokun 2.5s infinite linear;
+    height: 22px;
+    position: absolute;
+    transition: all 0.1s linear;
+    width: 22px;
+}
+.domokun img{
+    height: 20px;
+    object-fit: contain;
+}
+
+@keyframes domokun{
+    0%{transform: scale(1.2)}
+    25%{transform: scale(1.6)}
+    50%{transform: scale(1.75)}
+    75%{transform: scale(1.6)}
+    100%{transform: scale(1.2)}
+}

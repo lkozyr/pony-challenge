@@ -1,0 +1,25 @@
+.game-over{
+    background: rgb(34, 54, 84);
+    border: solid 1.5px var(--font-color);
+    border-radius: 5px;
+    left: calc(50% - 200px);
+    padding: 20px;
+    position: absolute;
+    top: 5vh;
+    width: 400px;
+}
+.game-over img{
+    border: solid 1px var(--font-color);
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+}
+.game-over h4{
+    color: var(--font-color);
+    font-family: PermanentMarker;
+    font-size: 30px;
+    text-align: center;
+}
+.new-game .btn-container{
+    grid-template-columns: repeat(3, 1fr);
+}

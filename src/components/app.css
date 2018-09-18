@@ -1,0 +1,121 @@
+:root{
+  --main-bg-color: rgb(7, 37, 61);
+  --font-color: rgb(155, 175, 195);
+  --maze-color: rgb(233, 30, 99);
+}
+@font-face{
+  font-family: UbuntuMono;
+  src: url('../fonts/UbuntuMono-Regular.ttf');
+}
+@font-face{
+  font-family: PermanentMarker;
+  src: url('../fonts/PermanentMarker.ttf');
+}
+*{
+  box-sizing: border-box;
+  font-family: UbuntuMono;
+}
+body{
+  background: var(--main-bg-color);
+  color: var(--font-color);
+  min-height: 97vh;
+}
+.app {
+  min-width: 560px;
+  position: relative;
+  text-align: center;
+}
+.app-header{
+  background: rgb(11, 45, 73);
+  min-height: 9vh;
+  padding-top: 12px;
+}
+.app-header h1{
+  font-family: PermanentMarker;
+  margin: 0;
+}
+.app-footer{
+  background: rgb(11, 45, 73);
+  height: 8vh;
+  line-height: 8vh;
+}
+.app-footer a{
+  color: var(--font-color);
+  margin-right: 1em;
+  text-decoration: none;
+}
+.app-footer a:hover{
+  color: var(--maze-color);
+}
+main{
+  display: grid;
+  grid-template-columns: fit-content(657px) fit-content(195px);
+  grid-gap: 20px;
+  margin: 0 auto;
+  max-width: 850px;
+  min-height: 83vh;
+  min-width: 590px;
+  padding: 1em 0 1em 0;
+  place-content: center;
+  width: 98%;
+}
+.buttons{
+	/*max-width: 192px;
+    min-width: 174px;*/
+}
+.audio-effects{
+	height: 0;
+	visibility: hidden;
+	width: 0;
+}
+.info-container{
+	max-width: 192px;
+    min-width: 174px;
+}
+
+/*****************************************************/
+/*                 Generic app styles                */
+/*****************************************************/
+.btn-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+}
+.btn{
+  background: var(--main-bg-color);
+  border: solid 1.5px var(--font-color);
+  border-radius: 5px;
+  color: var(--font-color);
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  margin: 0.2em;
+  padding: 0.4em 0;
+  width: 112px;
+}
+.btn-ok{
+  background: var(--main-bg-color);
+}
+.btn-ok:hover{
+  background: rgb(32, 66, 94);
+}
+.btn-ok:active{
+  background: rgb(7, 37, 61);
+  border-top: solid 2px var(--font-color);
+  border-bottom: solid 1px var(--font-color);;
+}
+.btn-cancel{
+  background: rgb(40, 91, 114);
+}
+.btn-cancel:hover{
+  background: rgb(50, 101, 124);
+}
+.btn-cancel:active{
+  background: rgb(32, 59, 81);
+  border-top: solid 2px var(--font-color);
+  border-bottom: solid 1px var(--font-color);
+}
+.hidden{
+  display: none;
+}
